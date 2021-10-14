@@ -12,6 +12,7 @@ jobs:
       github.event.pull_request.head.repo.full_name != github.repository
 
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     strategy:
       matrix:
         php: [ "7.3", "7.4", "8.0" ]
@@ -105,6 +106,7 @@ jobs:
       github.event.pull_request.head.repo.full_name != github.repository
 
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     env:
       php: "8.0"
       extensions: mbstring, ctype, curl, gd, apcu, memcached
