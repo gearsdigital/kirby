@@ -73,7 +73,9 @@ jobs:
 
       - name: Run tests
         if: always() && steps.finishPrepare.outcome == 'success'
-        run: phpunit --coverage-clover ${{ github.workspace }}/clover.xml
+        run: |
+          mkdir -p build/logs/phpunit
+          phpunit --coverage-clover ${{ github.workspace }}/clover.xml --log-junit build/logs/phpunit/junit.xml
 
       - name: Statically analyze using Psalm
         if: always() && steps.finishPrepare.outcome == 'success'
