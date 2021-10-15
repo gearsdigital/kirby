@@ -34,6 +34,7 @@ class ComposerStaticInita8011b477bb239488e5d139cdeb7b31e
         ),
         'L' => 
         array (
+            'LimeDeck\\Testing\\' => 17,
             'Laminas\\ZendFrameworkBridge\\' => 28,
             'Laminas\\Escaper\\' => 16,
         ),
@@ -63,6 +64,10 @@ class ComposerStaticInita8011b477bb239488e5d139cdeb7b31e
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'LimeDeck\\Testing\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/limedeck/phpunit-detailed-printer/src',
         ),
         'Laminas\\ZendFrameworkBridge\\' => 
         array (
@@ -361,6 +366,7 @@ class ComposerStaticInita8011b477bb239488e5d139cdeb7b31e
         'League\\ColorExtractor\\Color' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/Color.php',
         'League\\ColorExtractor\\ColorExtractor' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/ColorExtractor.php',
         'League\\ColorExtractor\\Palette' => __DIR__ . '/..' . '/league/color-extractor/src/League/ColorExtractor/Palette.php',
+        'LimeDeck\\Testing\\Printer' => __DIR__ . '/..' . '/limedeck/phpunit-detailed-printer/src/Printer.php',
         'Michelf\\SmartyPants' => __DIR__ . '/..' . '/michelf/php-smartypants/Michelf/SmartyPants.php',
         'Michelf\\SmartyPantsTypographer' => __DIR__ . '/..' . '/michelf/php-smartypants/Michelf/SmartyPantsTypographer.php',
         'PHPMailer\\PHPMailer\\Exception' => __DIR__ . '/..' . '/phpmailer/phpmailer/src/Exception.php',

@@ -266,6 +266,7 @@ return array(
     'League\\ColorExtractor\\Color' => $vendorDir . '/league/color-extractor/src/League/ColorExtractor/Color.php',
     'League\\ColorExtractor\\ColorExtractor' => $vendorDir . '/league/color-extractor/src/League/ColorExtractor/ColorExtractor.php',
     'League\\ColorExtractor\\Palette' => $vendorDir . '/league/color-extractor/src/League/ColorExtractor/Palette.php',
+    'LimeDeck\\Testing\\Printer' => $vendorDir . '/limedeck/phpunit-detailed-printer/src/Printer.php',
     'Michelf\\SmartyPants' => $vendorDir . '/michelf/php-smartypants/Michelf/SmartyPants.php',
     'Michelf\\SmartyPantsTypographer' => $vendorDir . '/michelf/php-smartypants/Michelf/SmartyPantsTypographer.php',
     'PHPMailer\\PHPMailer\\Exception' => $vendorDir . '/phpmailer/phpmailer/src/Exception.php',

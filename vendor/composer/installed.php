@@ -73,6 +73,15 @@
             'reference' => '837086ec60f50c84c611c613963e4ad2e2aec806',
             'dev_requirement' => false,
         ),
+        'limedeck/phpunit-detailed-printer' => array(
+            'pretty_version' => '6.0.0',
+            'version' => '6.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../limedeck/phpunit-detailed-printer',
+            'aliases' => array(),
+            'reference' => '29d3759bfc913b5b48a7c34445f484fd9d4ae543',
+            'dev_requirement' => false,
+        ),
         'matthecat/colorextractor' => array(
             'dev_requirement' => false,
             'replaced' => array(

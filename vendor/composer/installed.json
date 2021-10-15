@@ -369,6 +369,50 @@
             "install-path": "../league/color-extractor"
         },
         {
+            "name": "limedeck/phpunit-detailed-printer",
+            "version": "6.0.0",
+            "version_normalized": "6.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LimeDeck/phpunit-detailed-printer.git",
+                "reference": "29d3759bfc913b5b48a7c34445f484fd9d4ae543"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LimeDeck/phpunit-detailed-printer/zipball/29d3759bfc913b5b48a7c34445f484fd9d4ae543",
+                "reference": "29d3759bfc913b5b48a7c34445f484fd9d4ae543",
+                "shasum": ""
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.14",
+                "phpunit/phpunit": "~9.0"
+            },
+            "time": "2020-08-10T20:16:49+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "LimeDeck\\Testing\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "LimeDeck",
+                    "email": "mail@limedeck.io"
+                }
+            ],
+            "description": "Formatter for the detailed output of PHPUnit tests.",
+            "support": {
+                "issues": "https://github.com/LimeDeck/phpunit-detailed-printer/issues",
+                "source": "https://github.com/LimeDeck/phpunit-detailed-printer/tree/6.0.0"
+            },
+            "install-path": "../limedeck/phpunit-detailed-printer"
+        },
+        {
             "name": "michelf/php-smartypants",
             "version": "1.8.1",
             "version_normalized": "1.8.1.0",
