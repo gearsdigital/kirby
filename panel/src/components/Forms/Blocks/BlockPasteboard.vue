@@ -6,12 +6,11 @@
     size="large"
     class="k-block-importer"
   >
-    <!-- eslint-disable vue/no-v-html -->
+    <!-- eslint-disable-next-line vue/no-v-html -->
     <label
       for="pasteboard"
       v-html="$t('field.blocks.fieldsets.paste', { shortcut })"
     />
-    <!-- eslint-enable vue/no-v-html -->
     <textarea id="pasteboard" @paste.prevent="onPaste" />
   </k-dialog>
 </template>

@@ -1,17 +1,19 @@
 <template>
   <k-dialog
+    v-if="notification"
     ref="dialog"
     :cancel-button="false"
-    :size="size"
     :visible="true"
     class="k-error-dialog"
-    @cancel="$emit('cancel')"
-    @close="$emit('close')"
+    @close="exit"
     @submit="$refs.dialog.close()"
   >
-    <k-text>{{ message }}</k-text>
-    <dl v-if="detailsList.length" class="k-error-details">
-      <template v-for="(detail, index) in detailsList">
+    <k-text>{{ notification.message }}</k-text>
+    <dl
+      v-if="notification.details && Object.keys(notification.details).length"
+      class="k-error-details"
+    >
+      <template v-for="(detail, index) in notification.details">
         <dt :key="'detail-label-' + index">
           {{ detail.label }}
         </dt>
@@ -37,17 +39,27 @@ import DialogMixin from "@/mixins/dialog.js";
 
 export default {
   mixins: [DialogMixin],
-  props: {
-    details: [Object, Array],
-    message: String,
-    size: {
-      type: String,
-      default: "medium"
+  computed: {
+    notification() {
+      let notification = this.$store.state.notification;
+
+      if (notification.type === "error") {
+        return notification;
+      }
+
+      return null;
     }
   },
-  computed: {
-    detailsList() {
-      return Array.isArray(this.details) ? this.details : Object.values(this.details);
+  methods: {
+    enter() {
+      this.$nextTick(() => {
+        if (this.$el && this.$el.querySelector) {
+          this.$el.querySelector(".k-dialog-footer .k-button").focus();
+        }
+      });
+    },
+    exit() {
+      this.$store.dispatch("notification/close");
     }
   }
 };

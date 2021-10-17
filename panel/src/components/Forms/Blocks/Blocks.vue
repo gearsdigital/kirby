@@ -31,7 +31,7 @@
           @chooseToPrepend="choose(index)"
           @copy="copy()"
           @confirmToRemoveSelected="confirmToRemoveSelected"
-          @click.native.stop="select(block, $event)"
+          @click.native.stop="select(block)"
           @duplicate="duplicate(block, index)"
           @focus="select(block)"
           @hide="hide(block)"
@@ -78,7 +78,7 @@
       <k-block-pasteboard ref="pasteboard" @paste="paste($event)" />
     </template>
     <template v-else>
-      <k-box theme="info">No fieldsets yet</k-box>
+      <k-box theme="info"> No fieldsets yet </k-box>
     </template>
   </div>
 </template>
@@ -579,15 +579,7 @@ export default {
     save() {
       this.$emit("input", this.blocks);
     },
-    select(block, event = null) {
-      // checks the event just before selecting the block
-      // especially since keyup doesn't trigger in with
-      // `ctrl/alt/cmd + tab` or `ctrl/alt/cmd + click` combinations
-      // for ex: clicking outside of webpage or another browser tab
-      if (event && this.isMultiSelectKey) {
-        this.onKey(event);
-      }
-
+    select(block) {
       if (block && this.isMultiSelectKey) {
         this.addToBatch(block);
         this.current = null;
