@@ -137,7 +137,7 @@ class Dom
      */
     public function body()
     {
-        return $this->body = $this->body ?? $this->query('/html/body')[0] ?? null;
+        return $this->body ??= $this->query('/html/body')[0] ?? null;
     }
 
     /**
