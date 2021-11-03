@@ -83,7 +83,7 @@ export default {
         `);
       }
 
-      if (target && typeof target.focus === "function") {
+      if (typeof target?.focus === "function") {
         target.focus();
         return;
       }
@@ -127,14 +127,14 @@ export default {
     restoreScrollPosition() {
       const view = document.querySelector(".k-panel-view");
 
-      if (view && view.scrollTop) {
+      if (view?.scrollTop) {
         view.scrollTop = this.scrollTop;
       }
     },
     storeScrollPosition() {
       const view = document.querySelector(".k-panel-view");
 
-      if (view && view.scrollTop) {
+      if (view?.scrollTop) {
         this.scrollTop = view.scrollTop;
       } else {
         this.scrollTop = 0;
