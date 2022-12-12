@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b7a7d6d89fa6589eb1c725433e827ab",
+    "content-hash": "6bace69165434aa63f0a94f256bf8391",
     "packages": [
         {
             "name": "claviska/simpleimage",
-            "version": "3.6.3",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/claviska/SimpleImage.git",
-                "reference": "21b6f4bf4ef1927158b3e29bd0c2d99c6681c750"
+                "reference": "abd15ced313c7b8041d7d73d8d2398b4f2510cf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/21b6f4bf4ef1927158b3e29bd0c2d99c6681c750",
-                "reference": "21b6f4bf4ef1927158b3e29bd0c2d99c6681c750",
+                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/abd15ced313c7b8041d7d73d8d2398b4f2510cf1",
+                "reference": "abd15ced313c7b8041d7d73d8d2398b4f2510cf1",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
             "description": "A PHP class that makes working with images as simple as possible.",
             "support": {
                 "issues": "https://github.com/claviska/SimpleImage/issues",
-                "source": "https://github.com/claviska/SimpleImage/tree/3.6.3"
+                "source": "https://github.com/claviska/SimpleImage/tree/3.7.1"
             },
             "funding": [
                 {
@@ -53,7 +53,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-04-20T12:18:18+00:00"
+            "time": "2022-07-05T13:18:44+00:00"
         },
         {
             "name": "filp/whoops",
@@ -668,5 +668,5 @@
         "ext-mbstring": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.3.0"
 }
